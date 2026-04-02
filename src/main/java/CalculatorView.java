@@ -35,7 +35,7 @@ public class CalculatorView extends Application {
         }
 
         Scene scene = new Scene(FXMLLoader.load(fxmlURL));
-        stage.setTitle("ShoppingCartApp");
+        stage.setTitle("RForSwan/ShoppingCartApp2");
         stage.setScene(scene);
         stage.show();
     }
