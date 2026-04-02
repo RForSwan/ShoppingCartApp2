@@ -19,7 +19,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'master',
-                    url: 'https://github.com/RForSwan/ShoppingCartApp.git'
+                    url: 'https://github.com/RForSwan/ShoppingCartApp'
             }
         }
 
