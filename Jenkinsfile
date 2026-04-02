@@ -19,7 +19,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'master',
-                    url: 'https://github.com/RForSwan/ShoppingCartApp'
+                    url: 'https://github.com/RForSwan/ShoppingCartApp2'
             }
         }
 
@@ -64,3 +64,6 @@ pipeline {
 
     }
 }
+
+
+docker run --name shoppingcartapp2 -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix RForSwan/shoppingcartapp2
