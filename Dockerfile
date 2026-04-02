@@ -7,6 +7,6 @@ COPY pom.xml .
 
 COPY . /app
 
-RUN mvn package
+RUN mvn -DskipTests package
 
 CMD ["java","-jar", "target/ShoppingCartApp2-1.0-SNAPSHOT.jar"]
