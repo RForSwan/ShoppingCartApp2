@@ -8,7 +8,7 @@ pipeline {
     environment {
         PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
         DOCKERHUB_CREDENTIALS_ID = 'docker_hub'
-        DOCKERHUB_REPO = 'kaere/ShoppingCartApp2'
+        DOCKERHUB_REPO = 'kaere/shoppingcartapp2'
         DOCKER_IMAGE_TAG = 'latest'
     }
 
