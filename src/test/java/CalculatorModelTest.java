@@ -25,7 +25,7 @@ public class CalculatorModelTest {
         setInput("5\n");
         CalculatorModel calculator = new CalculatorModel();
 
-        CalculatorModel.PriceResult result = calculator.getCurrentItemPrice();
+        CalculatorModel.PriceResult result = calculator.getCurrentItemPrice("");
 
         assertTrue(result.isValid());
         assertFalse(result.isZero());
@@ -37,8 +37,8 @@ public class CalculatorModelTest {
         setInput("5\n2\n");
         CalculatorModel calculator = new CalculatorModel();
 
-        CalculatorModel.PriceResult priceResult = calculator.getCurrentItemPrice();
-        CalculatorModel.QuantityResult quantityResult = calculator.getCurrentItemQuantity();
+        CalculatorModel.PriceResult priceResult = calculator.getCurrentItemPrice("");
+        CalculatorModel.QuantityResult quantityResult = calculator.getCurrentItemQuantity("");
 
         assertTrue(priceResult.isValid());
         assertFalse(priceResult.isZero());
